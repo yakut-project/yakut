@@ -147,6 +147,8 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    recipient_interceptor (0.1.2)
+      mail
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
     rspec-core (2.14.5)
@@ -229,6 +231,7 @@ DEPENDENCIES
   rack-timeout (~> 0.0.4)
   rails (~> 4.0.0)
   rails_config (~> 0.3.3)
+  recipient_interceptor (~> 0.1.2)
   responders (~> 1.0.0.rc)
   rspec-rails (~> 2.14.0)
   sass-rails (~> 4.0.0)
