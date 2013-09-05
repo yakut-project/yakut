@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [c338d33](../../commit/c338d33) [#18](../../issues/18) Change default database of development to Sqlite3 __(Ahmet Sezgin Duran)__
  * [f07214a](../../commit/f07214a) [#21](../../issues/21) error class changed __(Muhammet DİLEK)__
  * [52318cd](../../commit/52318cd) [#19](../../issues/19) Fix README.md markdown of Gemnasium __(Ahmet Sezgin Duran)__
  * [664c51a](../../commit/664c51a) [#19](../../issues/19) Add README.md markdowns for Code Climate and Gemnasium __(Ahmet Sezgin Duran)__
