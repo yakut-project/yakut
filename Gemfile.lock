@@ -128,6 +128,7 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
+    rack-timeout (0.0.4)
     rails (4.0.0)
       actionmailer (= 4.0.0)
       actionpack (= 4.0.0)
@@ -225,6 +226,7 @@ DEPENDENCIES
   letter_opener
   paperclip (~> 3.5.1)
   pg (~> 0.15.1)
+  rack-timeout (~> 0.0.4)
   rails (~> 4.0.0)
   rails_config (~> 0.3.3)
   responders (~> 1.0.0.rc)
