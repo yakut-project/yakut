@@ -24,6 +24,7 @@ gem 'paperclip', '~> 3.5.1'
 gem 'kangal', '~> 0.1.2'
 gem 'rack-timeout', '~> 0.0.4'
 gem 'recipient_interceptor', '~> 0.1.2'
+gem 'ransack'
 
 group :doc do
   gem 'sdoc', require: false
