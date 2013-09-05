@@ -5,7 +5,9 @@ Yakut::Application.routes.draw do
   devise_for :users
   root to: 'welcome#index'
   namespace :hq do
-      resources :dashboard, only: [:index]
+      resources :dashboard do
+        get :tables, on: :collection
+      end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
