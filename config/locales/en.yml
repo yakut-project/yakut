@@ -22,3 +22,5 @@
 en:
   hello: "Hello world"
   cancel: Cancel
+  tooltips:
+    zoom: Zoom

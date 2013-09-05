@@ -1,0 +1,48 @@
+.panel.tables
+  .panel-heading
+    %i.icon-table.icon-large
+    Default Table
+  .panel-tools
+    .btn-group
+      %a.btn{href: '#'}
+        %i.icon-wrench
+        Settings
+      %a.btn{href: '#'}
+        %i.icon-filter
+        Filters
+      %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Reload'}
+        %i.icon-refresh
+    .badge 3 record
+  .panel-body.no-padding
+    .table-header.row
+      .col-lg-9
+        TODO: Add filters here
+      .col-lg-3
+        .input-group
+          %input.form-control{placeholder: 'Quick search...', type: 'text'}/
+          %span.input-group-btn
+            %button.btn{type: 'button'}
+              %i.icon-search
+    %table.table
+      %thead
+        %tr
+          %th #
+<% for attribute in attributes -%>
+          %th= sort_link(@search, :<%= attribute.name %>, t('activerecord.attributes.<%= singular_table_name %>.<%= attribute.name %>'))
+<% end -%>
+          %th.actions
+            Actions
+      %tbody
+      - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
+        %tr
+          %td= <%= singular_table_name %>.id
+<% for attribute in attributes -%>
+          %td= <%= singular_table_name %>.<%= attribute.name %>
+<% end -%>
+          %td.action
+            = link_to(<%= singular_table_name %>, class: 'btn btn-success', toogle: 'tooltip', title: t('tooltips.zoom')) do
+              %i.icon-zoom-in
+            = link_to(edit_<%= singular_table_name %>_path(<%= singular_table_name %>) , class: 'btn btn-info') do
+              %i.icon-edit
+            = link_to(<%= singular_table_name %>, class: 'btn btn-danger', method: :delete) do
+              %i.icon-trash

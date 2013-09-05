@@ -5,8 +5,9 @@ class <%= controller_class_name %>Controller < ApplicationController
 
 <% unless options[:singleton] -%>
   def index
-    @<%= table_name %> = <%= class_name %>.all.page(params[:page])
-    respond_with(@<%= table_name %>)
+    @search = <%= class_name %>.search(params[:q])
+     @<%= table_name %> = @search.result(:distinct => true).paginate(:page => params[:page])
+     respond_with(@<%= table_name %>)
   end
 <% end -%>
 

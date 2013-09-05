@@ -24,3 +24,5 @@
 tr:
   hello: "Merhaba Dünya"
   cancel: İptal
+  tooltips:
+      zoom: Detay
