@@ -78,18 +78,10 @@ Yakut::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-    # Mail Setting
-  config.action_mailer.default_url_options = { :host => 'yakut.com' }
-
-
+  # Mail Setting
+  config.action_mailer.default_url_options = {host: 'yakut.com'}
+  config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      :address              => 'smtp.mandrillapp.com',
-      :port                 => 587,
-      :enable_starttls_auto => true,
-      :user_name            => 'email@email.com', #TODO change this with original
-      :password             => 'password',        #TODO change this with original
-      :authentication       => 'plain'
-  }
+  config.action_mailer.smtp_settings = Settings.smtp.mandrill
 
 end

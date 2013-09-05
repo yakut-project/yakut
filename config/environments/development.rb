@@ -27,9 +27,7 @@ Yakut::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-    # Mail Setting
+  # Mail Setting
   config.action_mailer.default_url_options = { :host => 'yakut.dev' }
-
-
   config.action_mailer.delivery_method = :letter_opener
 end
