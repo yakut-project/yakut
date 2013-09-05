@@ -7,6 +7,7 @@ Yakut::Application.routes.draw do
   namespace :hq do
       resources :dashboard do
         get :tables, on: :collection
+        get :form, on: :collection
       end
   end
 
