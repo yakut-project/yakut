@@ -1,3 +1,5 @@
+Mail.register_interceptor RecipientInterceptor.new(Settings.email.noreply, subject_prefix: '[STAGING]')
+
 Yakut::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -61,10 +63,6 @@ Yakut::Application.configure do
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
 
-  # Ignore bad email addresses and do not raise email delivery errors.
-  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
-
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
@@ -78,10 +76,10 @@ Yakut::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  # Mail Setting
-  config.action_mailer.default_url_options = {host: 'yakut.com'}
-  config.action_mailer.raise_delivery_errors = false
+  # Ignore bad email addresses and do not raise email delivery errors.
+  # Set this to true and configure the email server for immediate delivery to raise delivery errors.
+  # config.action_mailer.raise_delivery_errors = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = Settings.smtp.mandrill
-
+  config.action_mailer.default_url_options = { host: 'yakut.sta' }
 end
