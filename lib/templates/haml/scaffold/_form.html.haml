@@ -7,4 +7,5 @@
   <%- end -%>
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, class: 'btn btn-default'
+    = link_to t('cancel'), <%= index_helper %>_path, class: 'btn'
