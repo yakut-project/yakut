@@ -3,27 +3,21 @@
 [![Dependency Status](https://gemnasium.com/yakut-project/yakut.png)](https://gemnasium.com/yakut-project/yakut)
 [![Build Status](https://travis-ci.org/yakut-project/yakut.png?branch=develop)](https://travis-ci.org/yakut-project/yakut)
 
+Open source project for managing LKD courses. It helps to select the applicants easily.
 
-ABOUT
-
-Open source project for managing LKD courses. It helps to select the applicants easily
-
-REQUIREMENTS
+## REQUIREMENTS
 
 You must have
-Ruby 2.x
-Rails 4.x
 
-CONTACT
+* Ruby 2.x
+* Rails 4.x
 
-[FACEBOOK](https://www.facebook.com/yakutproject)
+## CONTACT
 
-[TWITTER](https://twitter.com/yakutproject)
+* [Twitter](https://twitter.com/yakutproject)
+* [Facebook](https://www.facebook.com/yakutproject)
+* Google Groups: open-source-stars@googlegroups.com
 
-EMAIL: open-source-stars@googlegroups.com
-
-LICENSE
-
+## LICENSE
 
 YAKUT is released under the [MIT License](http://www.opensource.org/licenses/MIT)
-
