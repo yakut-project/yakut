@@ -24,3 +24,8 @@ en:
   cancel: Cancel
   tooltips:
     zoom: Zoom
+
+  tt:
+    index: "%{resource_name} list"
+    edit: "Editing %{resource_name}"
+    new: "New %{resource_name}"

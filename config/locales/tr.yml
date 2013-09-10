@@ -26,3 +26,7 @@ tr:
   cancel: İptal
   tooltips:
       zoom: Detay
+  tt:
+    index: "%{resource_name} listesi"
+    edit: "%{resource_name} düzenle"
+    new: "Yeni %{resource_name}"

@@ -1,9 +1,15 @@
 <% @search = "" -%>
 <% attributes.each { |attribute| @search += "_#{attribute.name}_or" } -%>
+
+- content_for :toolbar do
+  = link_to new_<%= singular_table_name %>_path, class: 'btn btn-default' do
+    %i.icon-plus
+    = t('tt.new', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
+
 .panel.tables
   .panel-heading
     %i.icon-table.icon-large
-    Default Table
+    = t('tt.index', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
   .panel-tools
     .btn-group
       %a.btn{href: '#'}
