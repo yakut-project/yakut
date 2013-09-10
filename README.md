@@ -17,10 +17,14 @@ You must have
 Admin:
 * Email: admin@yakut.org, Password: '12341234'
 
+Login on: "http://localhost:3000/hq/dashboard.html"
+
 Users:
 * Email: user1@yakut.org, Password: '12341234'
 * Email: user2@yakut.org, Password: '12341234'
 * Email: user3@yakut.org, Password: '12341234'
+
+Login on: "http://localhost:3000/users/sign_in"
 
 ## CONTACT
 

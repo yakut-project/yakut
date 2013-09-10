@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [c581aa2](../../commit/c581aa2) - __(Ahmet Sezgin Duran)__ [#24](../../issues/24) Create default users for development and update README.md
  * [1943cab](../../commit/1943cab) - __(Muhammet DİLEK)__ [#20](../../issues/20) edit and new page added
  * [6206a77](../../commit/6206a77) - __(Muhammet DİLEK)__ [#20](../../issues/20) pagination view added
  * [3c7bf81](../../commit/3c7bf81) - __(Muhammet DİLEK)__ [#20](../../issues/20) ransack form added
