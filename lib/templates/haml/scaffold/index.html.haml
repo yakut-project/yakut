@@ -4,7 +4,7 @@
 - content_for :toolbar do
   = link_to new_<%= singular_table_name %>_path, class: 'btn btn-default' do
     %i.icon-plus
-    = t('tt.new', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
+    = t('action_button.new', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
 
 .panel.tables
   .panel-heading

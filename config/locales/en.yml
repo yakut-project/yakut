@@ -29,3 +29,8 @@ en:
     index: "%{resource_name} list"
     edit: "Editing %{resource_name}"
     new: "New %{resource_name}"
+    show: "%{resource_name} detail"
+  action_button:
+    new: "New %{resource_name}"
+    edit: "Edit"
+
