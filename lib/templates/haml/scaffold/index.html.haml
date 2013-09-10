@@ -49,3 +49,5 @@
               %i.icon-edit
             = link_to(<%= singular_table_name %>, class: 'btn btn-danger', method: :delete) do
               %i.icon-trash
+
+= will_paginate @<%= plural_table_name %>, renderer: BootstrapPagination::Rails, bootstrap: 3
