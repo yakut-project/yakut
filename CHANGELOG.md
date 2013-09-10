@@ -2,6 +2,10 @@
 #### [Current]
 
 #### 
+ * [7c1f307](../../commit/7c1f307) - __(Muhammet DİLEK)__ [#20](../../issues/20) show_for config added
+ * [ca81bb4](../../commit/ca81bb4) - __(Muhammet DİLEK)__ [#20](../../issues/20) detail page added
+ * [19c5718](../../commit/19c5718) - __(Ahmet Sezgin Duran)__ Update README.md
+ * [560fd1b](../../commit/560fd1b) - __(Ahmet Sezgin Duran)__ [#24](../../issues/24) Clean up code and add login links to README.md
  * [c581aa2](../../commit/c581aa2) - __(Ahmet Sezgin Duran)__ [#24](../../issues/24) Create default users for development and update README.md
  * [1943cab](../../commit/1943cab) - __(Muhammet DİLEK)__ [#20](../../issues/20) edit and new page added
  * [6206a77](../../commit/6206a77) - __(Muhammet DİLEK)__ [#20](../../issues/20) pagination view added
