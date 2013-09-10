@@ -12,6 +12,16 @@ You must have
 * Ruby 2.x
 * Rails 4.x
 
+## DEFAULT USERS
+
+Admin:
+* Email: admin@yakut.org, Password: '12341234'
+
+Users:
+* Email: user1@yakut.org, Password: '12341234'
+* Email: user2@yakut.org, Password: '12341234'
+* Email: user3@yakut.org, Password: '12341234'
+
 ## CONTACT
 
 * [Twitter](https://twitter.com/yakutproject)
