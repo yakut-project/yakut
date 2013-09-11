@@ -1,59 +1,9 @@
-<% @search = "" -%>
-<% attributes.each { |attribute| @search += "_#{attribute.name}_or" } -%>
-
 - content_for :toolbar do
   = link_to new_<%= singular_table_name %>_path, class: 'btn btn-default' do
     %i.icon-plus
     = t('action_button.new', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
 
 .panel.tables
-  .panel-heading
-    %i.icon-table.icon-large
-    = t('tt.index', resource_name: <%= singular_table_name.capitalize %>.model_name.human)
-  .panel-tools
-    .btn-group
-      %a.btn{href: '#'}
-        %i.icon-wrench
-        Settings
-      %a.btn{href: '#'}
-        %i.icon-filter
-        Filters
-      %a.btn{href: <%= index_helper %>_path, data: {toggle: 'toolbar-tooltip'}, title: 'Reload'}
-        %i.icon-refresh
-    .badge= @<%= plural_table_name %>.total_entries
-  .panel-body.no-padding
-    .table-header.row
-      .col-lg-9
-        TODO: Add filters here
-      .col-lg-3
-        = search_form_for @search, builder: SimpleForm::FormBuilder do |f|
-          .input-group
-            = f.input_field :<%= @search[1..@search.size-4] %>_cont, label: false, input_html: {class: 'form-control'}, placeholder: 'Quick search...'
-            %span.input-group-btn
-              = button_tag( class: 'btn') do
-                %i.icon-search
-    %table.table
-      %thead
-        %tr
-          %th #
-<% for attribute in attributes -%>
-          %th= sort_link(@search, :<%= attribute.name %>, t('activerecord.attributes.<%= singular_table_name %>.<%= attribute.name %>'))
-<% end -%>
-          %th.actions
-            Actions
-      %tbody
-      - @<%= plural_table_name %>.each do |<%= singular_table_name %>|
-        %tr
-          %td= <%= singular_table_name %>.id
-<% for attribute in attributes -%>
-          %td= <%= singular_table_name %>.<%= attribute.name %>
-<% end -%>
-          %td.action
-            = link_to(<%= singular_table_name %>, class: 'btn btn-success', toogle: 'tooltip', title: t('tooltips.zoom')) do
-              %i.icon-zoom-in
-            = link_to(edit_<%= singular_table_name %>_path(<%= singular_table_name %>) , class: 'btn btn-info') do
-              %i.icon-edit
-            = link_to(<%= singular_table_name %>, class: 'btn btn-danger', method: :delete) do
-              %i.icon-trash
+  = render 'list'
 
 = will_paginate @<%= plural_table_name %>, renderer: BootstrapPagination::Rails, bootstrap: 3
