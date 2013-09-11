@@ -1,37 +1,42 @@
-# Yakut
-[![Code Climate](https://codeclimate.com/github/yakut-project/yakut.png)](https://codeclimate.com/github/yakut-project/yakut)
-[![Dependency Status](https://gemnasium.com/yakut-project/yakut.png)](https://gemnasium.com/yakut-project/yakut)
-[![Build Status](https://travis-ci.org/yakut-project/yakut.png?branch=develop)](https://travis-ci.org/yakut-project/yakut)
+# Yakut Project [![Code Climate](https://codeclimate.com/github/yakut-project/yakut.png)](https://codeclimate.com/github/yakut-project/yakut) [![Dependency Status](https://gemnasium.com/yakut-project/yakut.png)](https://gemnasium.com/yakut-project/yakut) [![Build Status](https://travis-ci.org/yakut-project/yakut.png?branch=develop)](https://travis-ci.org/yakut-project/yakut)
 
-Open source project for managing LKD courses. It helps to select the applicants easily.
+An open source, Ruby on Rails online courses management application.
 
-## REQUIREMENTS
+## Getting started
 
-You must have
+### System Requirements
 
-* Ruby 2.x
-* Rails 4.x
+* Ruby v2.0.0 recommended
+* PostgreSQL 9.2
+* ImageMagick
+* Ruby on Rails and other gem dependencies will be installed automatically by Bundler
 
-## DEFAULT USERS
+### Installation
+
+### Default Users
 
 Admin:
 * Email: admin@yakut.org, Password: '12341234'
 
-Login on: http://localhost:3000/hq/dashboard.html
+Login on: ['/hq/login'](http://localhost:3000/hq/login)
 
 Users:
 * Email: user1@yakut.org, Password: '12341234'
 * Email: user2@yakut.org, Password: '12341234'
 * Email: user3@yakut.org, Password: '12341234'
 
-Login on: http://localhost:3000/users/sign_in
+Login on: ['/users/sign_in'](http://localhost:3000/users/sign_in)
 
-## CONTACT
+## Resources
+
+
+
+## Community
 
 * [Twitter](https://twitter.com/yakutproject)
 * [Facebook](https://www.facebook.com/yakutproject)
 * Google Groups: open-source-stars@googlegroups.com
 
-## LICENSE
+## License
 
 YAKUT is released under the [MIT License](http://www.opensource.org/licenses/MIT)
