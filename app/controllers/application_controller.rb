@@ -16,8 +16,6 @@ class ApplicationController < ActionController::Base
     Time.zone = current_user.time_zone if user_signed_in? && current_user.time_zone.present?
   end
 
-
-
   def devise_parameter_sanitizer
     if resource_class == User
       User::ParameterSanitizer.new(User, :user, params)
@@ -26,12 +24,19 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
   def after_sign_in_path_for(resource_or_scope)
     if current_user
       super
     else
       hq_dashboard_index_path
+    end
+  end
+
+  def current_role
+    if current_user
+      return current_user.role
+    elsif current_admin
+      return :admin
     end
   end
 end

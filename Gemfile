@@ -26,6 +26,7 @@ gem 'rack-timeout', '~> 0.0.4'
 gem 'recipient_interceptor', '~> 0.1.2'
 gem 'ransack'
 gem 'show_for', '~> 0.3.0.rc'
+gem 'enumerize'
 
 group :doc do
   gem 'sdoc', require: false
