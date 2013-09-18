@@ -35,3 +35,10 @@ tr:
   action_button:
     new: "Yeni %{resource_name}"
     edit: "Düzenle"
+
+  tooltips:
+    edit: Düzenle
+    new: Yeni
+    zoom: Detay
+  navbar:
+    root: Anasayfa

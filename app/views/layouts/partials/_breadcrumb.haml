@@ -1,4 +1,2 @@
 %ul#breadcrumb.breadcrumb
-  %li.title= yield :title
-  %li= link_to 'Lorem', '#'
-  %li.active= link_to 'ipsum', '#'
+  = render_breadcrumbs :separator => ' / '

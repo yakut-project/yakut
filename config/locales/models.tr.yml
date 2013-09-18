@@ -1,0 +1,4 @@
+tr:
+  activerecord:
+    models:
+    attributes:

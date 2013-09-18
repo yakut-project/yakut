@@ -33,4 +33,10 @@ en:
   action_button:
     new: "New %{resource_name}"
     edit: "Edit"
+  tooltips:
+    edit: Edit
+    new: New
+    zoom: Detail
+  navbar:
+    root: Home
 
