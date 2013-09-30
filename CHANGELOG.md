@@ -2,6 +2,7 @@
 #### [Current]
 
 #### 
+ * [cff2a63](../../commit/cff2a63) - __(Muhammet DILEK)__ [#30](../../issues/30)  breadcrumb added to generator
  * [cf2f874](../../commit/cf2f874) - __(Muhammet DILEK)__ [#29](../../issues/29)  navbar fixed
  * [beff870](../../commit/beff870) - __(Muhammet DILEK)__ [#29](../../issues/29)  theme presentation page updated
  * [72c0859](../../commit/72c0859) - __(Muhammet DILEK)__ [#29](../../issues/29) bootstrap3 class added to generator and theme

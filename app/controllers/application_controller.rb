@@ -1,7 +1,6 @@
 require 'application_responder'
 
 class ApplicationController < ActionController::Base
-  add_breadcrumb I18n.t('navbar.root'), :root_path
   before_filter :set_user_time_zone
 
 

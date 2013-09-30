@@ -50,6 +50,7 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    blankable (0.2.0)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
     capybara (2.1.0)
@@ -102,6 +103,16 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+    hierapolis-rails (0.3.1)
+      blankable (~> 0.2.0)
+      breadcrumbs_on_rails (~> 2.3.0)
+      haml (~> 4.0.3)
+      haml-rails (~> 0.4)
+      ransack (~> 1.0.0)
+      responder (~> 0.2.4)
+      show_for (~> 0.3.0.rc)
+      will_paginate (~> 3.0.3)
+      will_paginate-bootstrap (~> 0.2.3)
     hike (1.2.3)
     i18n (0.6.5)
     jquery-rails (3.0.4)
@@ -163,6 +174,10 @@ GEM
       json (~> 1.4)
     recipient_interceptor (0.1.2)
       mail
+    responder (0.2.4)
+      compass (>= 0.12.2)
+      rake
+      sass (>= 3.2.0)
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
     rspec-core (2.14.5)
@@ -230,6 +245,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  blankable
   bootstrap-sass!
   breadcrumbs_on_rails
   capybara (~> 2.1.0)
@@ -241,6 +257,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   haml (~> 4.0.2)
   haml-rails
+  hierapolis-rails
   jquery-rails (~> 3.0.4)
   kangal (~> 1.0.0)
   katip (~> 1.2.1)
